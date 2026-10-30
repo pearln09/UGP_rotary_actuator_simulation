@@ -1,0 +1,691 @@
+{
+  "linear_model": {
+    "J_eq": 0.0026,
+    "Kv": 0.5,
+    "B_eq": 0.5026,
+    "stall_torque_output_Nm": 6.0,
+    "no_load_speed_output_deg_s": 683.9925926750774,
+    "pid_roots": [
+      "(-239.45+0j)",
+      "(-15.39+9.18j)",
+      "(-15.39-9.18j)"
+    ],
+    "pd_roots": [
+      "-237.9",
+      "-32.33"
+    ],
+    "pd_static_stiffness_Nm_per_deg": 0.3490658503988659,
+    "encoder_lsb_deg": 0.02197265625
+  },
+  "main_PID": [
+    {
+      "t_cmd": 0.0,
+      "target": 90.0,
+      "from_meas": 0.0,
+      "commanded_move_deg": 90.0,
+      "actual_displacement_deg": 90.001,
+      "direction_correct": true,
+      "t90_s": 0.134,
+      "settling_time_s": 0.403,
+      "overshoot_deg": 0.793,
+      "overshoot_pct": 0.881,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 17.178,
+      "hold_window_s": [
+        0.403,
+        1.0
+      ],
+      "hold_MAE_deg": 0.0272,
+      "hold_max_abs_err_deg": 0.2487,
+      "hold_meas_MAE_deg": 0.0321,
+      "hold_duty_rms": 0.0031,
+      "hold_duty_changes_per_s": 60.3,
+      "late_hold_MAE_deg": 0.0053,
+      "late_hold_max_abs_err_deg": 0.0083
+    },
+    {
+      "t_cmd": 1.0,
+      "target": 350.0,
+      "from_meas": 90.0,
+      "commanded_move_deg": -100.0,
+      "actual_displacement_deg": -99.978,
+      "direction_correct": true,
+      "t90_s": 0.145,
+      "settling_time_s": 0.412,
+      "overshoot_deg": 0.7611,
+      "overshoot_pct": 0.761,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 20.338,
+      "hold_window_s": [
+        1.412,
+        2.0
+      ],
+      "hold_MAE_deg": 0.0382,
+      "hold_max_abs_err_deg": 0.2499,
+      "hold_meas_MAE_deg": 0.0347,
+      "hold_duty_rms": 0.0032,
+      "hold_duty_changes_per_s": 64.6,
+      "late_hold_MAE_deg": 0.0245,
+      "late_hold_max_abs_err_deg": 0.026
+    },
+    {
+      "t_cmd": 2.0,
+      "target": 10.0,
+      "from_meas": 350.002,
+      "commanded_move_deg": 19.998,
+      "actual_displacement_deg": 19.975,
+      "direction_correct": true,
+      "t90_s": 0.073,
+      "settling_time_s": 0.3,
+      "overshoot_deg": 0.7856,
+      "overshoot_pct": 3.929,
+      "peak_speed_deg_s": 532.3,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 2.615,
+      "hold_window_s": [
+        2.3,
+        3.0
+      ],
+      "hold_MAE_deg": 0.0211,
+      "hold_max_abs_err_deg": 0.2488,
+      "hold_meas_MAE_deg": 0.0274,
+      "hold_duty_rms": 0.0028,
+      "hold_duty_changes_per_s": 50.0,
+      "late_hold_MAE_deg": 0.0017,
+      "late_hold_max_abs_err_deg": 0.0017
+    },
+    {
+      "t_cmd": 3.0,
+      "target": 190.0,
+      "from_meas": 9.998,
+      "commanded_move_deg": 180.002,
+      "actual_displacement_deg": 180.0,
+      "direction_correct": true,
+      "t90_s": 0.245,
+      "settling_time_s": 0.536,
+      "overshoot_deg": 0.7948,
+      "overshoot_pct": 0.442,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 47.289,
+      "hold_window_s": [
+        3.536,
+        4.0
+      ],
+      "hold_MAE_deg": 0.031,
+      "hold_max_abs_err_deg": 0.2488,
+      "hold_meas_MAE_deg": 0.0401,
+      "hold_duty_rms": 0.0034,
+      "hold_duty_changes_per_s": 75.4,
+      "late_hold_MAE_deg": 0.0037,
+      "late_hold_max_abs_err_deg": 0.0038,
+      "disturbances": [
+        {
+          "window_s": [
+            4.0,
+            5.0
+          ],
+          "torque_Nm": 0.5,
+          "peak_dev_during_deg": 1.0255,
+          "mean_err_last25pct_of_window_deg": -0.0223,
+          "back_in_tol_under_load_after_s": 0.208,
+          "peak_dev_after_release_deg": 0.9931,
+          "recovery_time_after_release_s": 0.203,
+          "peak_current_during_A": 0.553,
+          "final_abs_err_deg": 0.0187
+        }
+      ]
+    },
+    {
+      "t_cmd": 6.0,
+      "target": 300.0,
+      "from_meas": 189.998,
+      "commanded_move_deg": 110.002,
+      "actual_displacement_deg": 109.975,
+      "direction_correct": true,
+      "t90_s": 0.157,
+      "settling_time_s": 0.433,
+      "overshoot_deg": 0.7994,
+      "overshoot_pct": 0.727,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 23.068,
+      "hold_window_s": [
+        6.433,
+        7.0
+      ],
+      "hold_MAE_deg": 0.0285,
+      "hold_max_abs_err_deg": 0.2467,
+      "hold_meas_MAE_deg": 0.0341,
+      "hold_duty_rms": 0.0031,
+      "hold_duty_changes_per_s": 63.5,
+      "late_hold_MAE_deg": 0.0069,
+      "late_hold_max_abs_err_deg": 0.0089
+    },
+    {
+      "t_cmd": 7.0,
+      "target": 45.0,
+      "from_meas": 299.993,
+      "commanded_move_deg": 105.007,
+      "actual_displacement_deg": 105.007,
+      "direction_correct": true,
+      "t90_s": 0.151,
+      "settling_time_s": 0.426,
+      "overshoot_deg": 0.7952,
+      "overshoot_pct": 0.757,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 21.524,
+      "hold_window_s": [
+        7.426,
+        8.0
+      ],
+      "hold_MAE_deg": 0.0268,
+      "hold_max_abs_err_deg": 0.2495,
+      "hold_meas_MAE_deg": 0.0327,
+      "hold_duty_rms": 0.0032,
+      "hold_duty_changes_per_s": 64.5,
+      "late_hold_MAE_deg": 0.0049,
+      "late_hold_max_abs_err_deg": 0.0068
+    }
+  ],
+  "main_PD": [
+    {
+      "t_cmd": 0.0,
+      "target": 90.0,
+      "from_meas": 0.0,
+      "commanded_move_deg": 90.0,
+      "actual_displacement_deg": 89.98,
+      "direction_correct": true,
+      "t90_s": 0.134,
+      "settling_time_s": 0.249,
+      "overshoot_deg": 0.0,
+      "overshoot_pct": 0.0,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 27.511,
+      "hold_window_s": [
+        0.249,
+        1.0
+      ],
+      "hold_MAE_deg": 0.0324,
+      "hold_max_abs_err_deg": 0.2477,
+      "hold_meas_MAE_deg": 0.0356,
+      "hold_duty_rms": 0.0025,
+      "hold_duty_changes_per_s": 37.3,
+      "late_hold_MAE_deg": 0.0204,
+      "late_hold_max_abs_err_deg": 0.0204
+    },
+    {
+      "t_cmd": 1.0,
+      "target": 350.0,
+      "from_meas": 89.978,
+      "commanded_move_deg": -99.978,
+      "actual_displacement_deg": -99.935,
+      "direction_correct": true,
+      "t90_s": 0.145,
+      "settling_time_s": 0.267,
+      "overshoot_deg": 0.0,
+      "overshoot_pct": 0.0,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 31.126,
+      "hold_window_s": [
+        1.267,
+        2.0
+      ],
+      "hold_MAE_deg": 0.0553,
+      "hold_max_abs_err_deg": 0.2478,
+      "hold_meas_MAE_deg": 0.0369,
+      "hold_duty_rms": 0.0024,
+      "hold_duty_changes_per_s": 36.8,
+      "late_hold_MAE_deg": 0.0445,
+      "late_hold_max_abs_err_deg": 0.0445
+    },
+    {
+      "t_cmd": 2.0,
+      "target": 10.0,
+      "from_meas": 350.024,
+      "commanded_move_deg": 19.976,
+      "actual_displacement_deg": 19.933,
+      "direction_correct": true,
+      "t90_s": 0.076,
+      "settling_time_s": 0.146,
+      "overshoot_deg": 0.0,
+      "overshoot_pct": 0.0,
+      "peak_speed_deg_s": 531.2,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 4.873,
+      "hold_window_s": [
+        2.146,
+        3.0
+      ],
+      "hold_MAE_deg": 0.033,
+      "hold_max_abs_err_deg": 0.2461,
+      "hold_meas_MAE_deg": 0.036,
+      "hold_duty_rms": 0.0023,
+      "hold_duty_changes_per_s": 35.1,
+      "late_hold_MAE_deg": 0.0229,
+      "late_hold_max_abs_err_deg": 0.0229
+    },
+    {
+      "t_cmd": 3.0,
+      "target": 190.0,
+      "from_meas": 9.976,
+      "commanded_move_deg": 180.024,
+      "actual_displacement_deg": 180.0,
+      "direction_correct": true,
+      "t90_s": 0.245,
+      "settling_time_s": 0.381,
+      "overshoot_deg": 0.0,
+      "overshoot_pct": 0.0,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 66.352,
+      "hold_window_s": [
+        3.381,
+        4.0
+      ],
+      "hold_MAE_deg": 0.0366,
+      "hold_max_abs_err_deg": 0.2497,
+      "hold_meas_MAE_deg": 0.0405,
+      "hold_duty_rms": 0.0027,
+      "hold_duty_changes_per_s": 45.2,
+      "late_hold_MAE_deg": 0.0224,
+      "late_hold_max_abs_err_deg": 0.0224,
+      "disturbances": [
+        {
+          "window_s": [
+            4.0,
+            5.0
+          ],
+          "torque_Nm": 0.5,
+          "peak_dev_during_deg": 1.4481,
+          "mean_err_last25pct_of_window_deg": -1.4475,
+          "back_in_tol_under_load_after_s": null,
+          "peak_dev_after_release_deg": 1.448,
+          "recovery_time_after_release_s": 0.065,
+          "peak_current_during_A": 0.557,
+          "final_abs_err_deg": 0.0402
+        }
+      ]
+    },
+    {
+      "t_cmd": 6.0,
+      "target": 300.0,
+      "from_meas": 190.02,
+      "commanded_move_deg": 109.98,
+      "actual_displacement_deg": 109.932,
+      "direction_correct": true,
+      "t90_s": 0.157,
+      "settling_time_s": 0.279,
+      "overshoot_deg": 0.0,
+      "overshoot_pct": 0.0,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 35.523,
+      "hold_window_s": [
+        6.279,
+        7.0
+      ],
+      "hold_MAE_deg": 0.0387,
+      "hold_max_abs_err_deg": 0.2465,
+      "hold_meas_MAE_deg": 0.0421,
+      "hold_duty_rms": 0.0025,
+      "hold_duty_changes_per_s": 37.4,
+      "late_hold_MAE_deg": 0.0276,
+      "late_hold_max_abs_err_deg": 0.0276
+    },
+    {
+      "t_cmd": 7.0,
+      "target": 45.0,
+      "from_meas": 299.971,
+      "commanded_move_deg": 105.029,
+      "actual_displacement_deg": 105.008,
+      "direction_correct": true,
+      "t90_s": 0.151,
+      "settling_time_s": 0.271,
+      "overshoot_deg": 0.0,
+      "overshoot_pct": 0.0,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 33.58,
+      "hold_window_s": [
+        7.271,
+        8.0
+      ],
+      "hold_MAE_deg": 0.0324,
+      "hold_max_abs_err_deg": 0.2481,
+      "hold_meas_MAE_deg": 0.0361,
+      "hold_duty_rms": 0.0025,
+      "hold_duty_changes_per_s": 41.2,
+      "late_hold_MAE_deg": 0.02,
+      "late_hold_max_abs_err_deg": 0.02
+    }
+  ],
+  "main_PID_noise2LSB": [
+    {
+      "t_cmd": 0.0,
+      "target": 90.0,
+      "from_meas": 0.0,
+      "commanded_move_deg": 90.0,
+      "actual_displacement_deg": 90.025,
+      "direction_correct": true,
+      "t90_s": 0.134,
+      "settling_time_s": 0.402,
+      "overshoot_deg": 0.8016,
+      "overshoot_pct": 0.891,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.883,
+      "transition_MAE_deg": 17.223,
+      "hold_window_s": [
+        0.402,
+        1.0
+      ],
+      "hold_MAE_deg": 0.0301,
+      "hold_max_abs_err_deg": 0.2494,
+      "hold_meas_MAE_deg": 0.0471,
+      "hold_duty_rms": 0.0164,
+      "hold_duty_changes_per_s": 944.8,
+      "late_hold_MAE_deg": 0.0151,
+      "late_hold_max_abs_err_deg": 0.0288
+    },
+    {
+      "t_cmd": 1.0,
+      "target": 350.0,
+      "from_meas": 90.066,
+      "commanded_move_deg": -100.066,
+      "actual_displacement_deg": -100.083,
+      "direction_correct": true,
+      "t90_s": 0.145,
+      "settling_time_s": 0.415,
+      "overshoot_deg": 0.7731,
+      "overshoot_pct": 0.773,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.884,
+      "transition_MAE_deg": 20.227,
+      "hold_window_s": [
+        1.415,
+        2.0
+      ],
+      "hold_MAE_deg": 0.0385,
+      "hold_max_abs_err_deg": 0.2447,
+      "hold_meas_MAE_deg": 0.0537,
+      "hold_duty_rms": 0.0177,
+      "hold_duty_changes_per_s": 933.3,
+      "late_hold_MAE_deg": 0.0157,
+      "late_hold_max_abs_err_deg": 0.0401
+    },
+    {
+      "t_cmd": 2.0,
+      "target": 10.0,
+      "from_meas": 349.958,
+      "commanded_move_deg": 20.042,
+      "actual_displacement_deg": 20.05,
+      "direction_correct": true,
+      "t90_s": 0.073,
+      "settling_time_s": 0.3,
+      "overshoot_deg": 0.7924,
+      "overshoot_pct": 3.954,
+      "peak_speed_deg_s": 532.1,
+      "peak_current_A": 4.86,
+      "transition_MAE_deg": 2.625,
+      "hold_window_s": [
+        2.3,
+        3.0
+      ],
+      "hold_MAE_deg": 0.0277,
+      "hold_max_abs_err_deg": 0.2496,
+      "hold_meas_MAE_deg": 0.0478,
+      "hold_duty_rms": 0.0164,
+      "hold_duty_changes_per_s": 924.3,
+      "late_hold_MAE_deg": 0.0192,
+      "late_hold_max_abs_err_deg": 0.0348
+    },
+    {
+      "t_cmd": 3.0,
+      "target": 190.0,
+      "from_meas": 9.976,
+      "commanded_move_deg": 180.024,
+      "actual_displacement_deg": 179.997,
+      "direction_correct": true,
+      "t90_s": 0.245,
+      "settling_time_s": 0.534,
+      "overshoot_deg": 0.7937,
+      "overshoot_pct": 0.441,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.861,
+      "transition_MAE_deg": 47.449,
+      "hold_window_s": [
+        3.534,
+        4.0
+      ],
+      "hold_MAE_deg": 0.0359,
+      "hold_max_abs_err_deg": 0.2487,
+      "hold_meas_MAE_deg": 0.0538,
+      "hold_duty_rms": 0.0165,
+      "hold_duty_changes_per_s": 950.6,
+      "late_hold_MAE_deg": 0.0133,
+      "late_hold_max_abs_err_deg": 0.0264,
+      "disturbances": [
+        {
+          "window_s": [
+            4.0,
+            5.0
+          ],
+          "torque_Nm": 0.5,
+          "peak_dev_during_deg": 1.0267,
+          "mean_err_last25pct_of_window_deg": -0.0082,
+          "back_in_tol_under_load_after_s": 0.205,
+          "peak_dev_after_release_deg": 0.9967,
+          "recovery_time_after_release_s": 0.204,
+          "peak_current_during_A": 0.79,
+          "final_abs_err_deg": 0.0044
+        }
+      ]
+    },
+    {
+      "t_cmd": 6.0,
+      "target": 300.0,
+      "from_meas": 189.91,
+      "commanded_move_deg": 110.09,
+      "actual_displacement_deg": 110.081,
+      "direction_correct": true,
+      "t90_s": 0.157,
+      "settling_time_s": 0.435,
+      "overshoot_deg": 0.7762,
+      "overshoot_pct": 0.705,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.88,
+      "transition_MAE_deg": 22.989,
+      "hold_window_s": [
+        6.435,
+        7.0
+      ],
+      "hold_MAE_deg": 0.0283,
+      "hold_max_abs_err_deg": 0.2459,
+      "hold_meas_MAE_deg": 0.0508,
+      "hold_duty_rms": 0.0171,
+      "hold_duty_changes_per_s": 931.0,
+      "late_hold_MAE_deg": 0.007,
+      "late_hold_max_abs_err_deg": 0.0156
+    },
+    {
+      "t_cmd": 7.0,
+      "target": 45.0,
+      "from_meas": 300.125,
+      "commanded_move_deg": 104.875,
+      "actual_displacement_deg": 104.861,
+      "direction_correct": true,
+      "t90_s": 0.151,
+      "settling_time_s": 0.427,
+      "overshoot_deg": 0.7944,
+      "overshoot_pct": 0.758,
+      "peak_speed_deg_s": 681.7,
+      "peak_current_A": 4.886,
+      "transition_MAE_deg": 21.421,
+      "hold_window_s": [
+        7.427,
+        8.0
+      ],
+      "hold_MAE_deg": 0.0293,
+      "hold_max_abs_err_deg": 0.2482,
+      "hold_meas_MAE_deg": 0.0505,
+      "hold_duty_rms": 0.0172,
+      "hold_duty_changes_per_s": 931.9,
+      "late_hold_MAE_deg": 0.0071,
+      "late_hold_max_abs_err_deg": 0.0214
+    }
+  ],
+  "batch_PID": {
+    "n": 100,
+    "path_ok": 100,
+    "settled_within_1s": 100,
+    "settle_s_median": 0.422,
+    "settle_s_max": 0.533,
+    "overshoot_deg_max": 0.8091170900672182,
+    "hold_MAE_deg_mean": 0.01754856509162736,
+    "final_err_deg_max": 0.04050013137415931,
+    "failures": []
+  },
+  "capacity_sweep_PID": [
+    {
+      "torque": 0.5,
+      "peak_dev": 1.0165938017301528,
+      "err_end_of_push": -0.019625562660821574,
+      "duty_end_of_push": -0.08294901960784314,
+      "current_end_of_push": -0.49819710432477754,
+      "final_err": 0.020917853977536538
+    },
+    {
+      "torque": 1.0,
+      "peak_dev": 2.0604924893842735,
+      "err_end_of_push": -0.009739508478821336,
+      "duty_end_of_push": -0.1672,
+      "current_end_of_push": -1.0026748692563041,
+      "final_err": 0.0209034967295878
+    },
+    {
+      "torque": 2.0,
+      "peak_dev": 4.15175616789881,
+      "err_end_of_push": -1.4710297488072683,
+      "duty_end_of_push": -0.33333333333333326,
+      "current_end_of_push": -2.0000000000000004,
+      "final_err": 0.02109489836537648
+    },
+    {
+      "torque": 4.0,
+      "peak_dev": 10.944372345136912,
+      "err_end_of_push": -10.94431069882623,
+      "duty_end_of_push": -0.6666666666666665,
+      "current_end_of_push": -3.999999999999999,
+      "final_err": 0.021118182408500275
+    },
+    {
+      "torque": 5.5,
+      "peak_dev": 15.426674817927776,
+      "err_end_of_push": -15.425588921989164,
+      "duty_end_of_push": -0.9168313725490198,
+      "current_end_of_push": -5.50098627900751,
+      "final_err": 0.021036508608091253
+    },
+    {
+      "torque": 7.0,
+      "peak_dev": 121.74832595125022,
+      "err_end_of_push": -107.83933657920969,
+      "duty_end_of_push": -1.0,
+      "current_end_of_push": -6.974930362116994,
+      "final_err": 0.020739687413296792
+    }
+  ],
+  "capacity_sweep_PD": [
+    {
+      "torque": 0.5,
+      "peak_dev": 1.4505800442327512,
+      "err_end_of_push": -1.4499480659579145,
+      "duty_end_of_push": -0.08330980392156863,
+      "current_end_of_push": -0.4997511992500394,
+      "final_err": 0.04227223417781545
+    },
+    {
+      "torque": 1.0,
+      "peak_dev": 2.8790967147014754,
+      "err_end_of_push": -2.8780791402637336,
+      "duty_end_of_push": -0.1665098039215686,
+      "current_end_of_push": -0.999004291508285,
+      "final_err": 0.04268200144382206
+    },
+    {
+      "torque": 2.0,
+      "peak_dev": 5.714654126072745,
+      "err_end_of_push": -5.714085646669319,
+      "duty_end_of_push": -0.33333333333333326,
+      "current_end_of_push": -1.9999999999999996,
+      "final_err": 0.04216043717521245
+    },
+    {
+      "torque": 4.0,
+      "peak_dev": 11.427320053557096,
+      "err_end_of_push": -11.427258407221814,
+      "duty_end_of_push": -0.6666666666666665,
+      "current_end_of_push": -3.999999999999999,
+      "final_err": 0.04252026404705589
+    },
+    {
+      "torque": 5.5,
+      "peak_dev": 15.755700630301078,
+      "err_end_of_push": -15.754808252715868,
+      "duty_end_of_push": -0.9167529411764705,
+      "current_end_of_push": -5.500519239297016,
+      "final_err": 0.042092460146974986
+    },
+    {
+      "torque": 7.0,
+      "peak_dev": 121.92535932817822,
+      "err_end_of_push": -108.0163699561377,
+      "duty_end_of_push": -1.0,
+      "current_end_of_push": -6.974930362116994,
+      "final_err": 0.04244351375470501
+    }
+  ],
+  "variant_study": [
+    {
+      "variant": "PD (Ki=0)",
+      "mean_settle_s": 0.2655,
+      "max_overshoot_deg": 0.0,
+      "dist_0p5Nm_err_end_deg": -1.4475,
+      "dist_0p5Nm_peak_deg": 1.4481,
+      "err_under_2Nm_deg": -5.714085646669319,
+      "err_under_4Nm_deg": -11.427258407221814
+    },
+    {
+      "variant": "PID baseline (zone 5 deg, clamp 3 V)",
+      "mean_settle_s": 0.4183333333333334,
+      "max_overshoot_deg": 0.7994,
+      "dist_0p5Nm_err_end_deg": -0.0223,
+      "dist_0p5Nm_peak_deg": 1.0255,
+      "err_under_2Nm_deg": -1.4710297488072683,
+      "err_under_4Nm_deg": -10.94431069882623
+    },
+    {
+      "variant": "PID zone 1 deg, clamp 3 V",
+      "mean_settle_s": 0.2545,
+      "max_overshoot_deg": 0.1595,
+      "dist_0p5Nm_err_end_deg": -1.0959,
+      "dist_0p5Nm_peak_deg": 1.0966,
+      "err_under_2Nm_deg": -5.67046705072572,
+      "err_under_4Nm_deg": -11.42681866160251
+    },
+    {
+      "variant": "PID zone 20 deg, clamp 12 V",
+      "mean_settle_s": 0.43733333333333335,
+      "max_overshoot_deg": 3.2862,
+      "dist_0p5Nm_err_end_deg": -0.0229,
+      "dist_0p5Nm_peak_deg": 1.0315,
+      "err_under_2Nm_deg": -0.0008437211034504344,
+      "err_under_4Nm_deg": -0.0013433617259863695
+    }
+  ]
+}
